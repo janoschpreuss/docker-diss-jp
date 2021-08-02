@@ -7,7 +7,7 @@ RUN apt-get install -y \
   libeigen3-dev \
   libsuitesparse-dev \
   libflint-arb-dev \
-  install libflint-arb2 \
+  libflint-arb2 \
   wget
 
 RUN pip3 install psutil mpmath
