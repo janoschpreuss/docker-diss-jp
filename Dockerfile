@@ -6,6 +6,8 @@ RUN apt-get install -y \
   libatlas-base-dev \
   libeigen3-dev \
   libsuitesparse-dev \
+  libflint-arb-dev \
+  install libflint-arb2 \
   wget
 
 RUN pip3 install psutil mpmath
@@ -27,6 +29,8 @@ RUN git submodule update --init --recursive
 WORKDIR /home/app/diss_jp_repro/ngs_refsol
 RUN python3 setup.py install --user  
 WORKDIR /home/app/diss_jp_repro/ceres_dtn
+RUN python3 setup.py install --user
+WORKDIR /home/app/diss_jp_repro/ngs_arb
 RUN python3 setup.py install --user
 WORKDIR /home/app/diss_jp_repro/pole_finder
 RUN python3 setup.py install --user
