@@ -1,4 +1,4 @@
-FROM schruste/ngsolve:latest
+FROM ngsxfem/ngsxfem:latest
 
 USER root
 RUN apt-get install -y \
