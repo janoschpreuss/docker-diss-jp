@@ -10,6 +10,7 @@ RUN apt-get install -y \
   libgmp-dev \
   libflint-dev \
   libflint-arb-dev \
+  libflint-arb2 \
   wget
 
 RUN pip3 install psutil mpmath
