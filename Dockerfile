@@ -6,8 +6,10 @@ RUN apt-get install -y \
   libatlas-base-dev \
   libeigen3-dev \
   libsuitesparse-dev \
+  libmpfr-dev \
+  libgmp-dev \
+  libflint-dev \
   libflint-arb-dev \
-  libflint-arb2 \
   wget
 
 RUN pip3 install psutil mpmath
