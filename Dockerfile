@@ -33,6 +33,8 @@ WORKDIR /home/app/diss_jp_repro/ngs_refsol
 RUN python3 setup.py install --user  
 WORKDIR /home/app/diss_jp_repro/ceres_dtn
 RUN python3 setup.py install --user
+WORKDIR /home/app/diss_jp_repro/ngs_arb
+RUN python3 setup.py install --user
 WORKDIR /home/app/diss_jp_repro/pole_finder
 RUN python3 setup.py install --user
         
