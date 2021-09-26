@@ -11,6 +11,7 @@ RUN apt-get install -y \
   libflint-dev \
   libflint-arb-dev \
   libflint-arb2 \
+  texlive-full \
   wget
 
 RUN pip3 install psutil mpmath
